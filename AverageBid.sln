@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageBid", "AverageBid\AverageBid.csproj", "{ED77903D-2726-4BDE-8A86-DEF9D0542B6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageBid.Tests", "AverageBid.Tests\AverageBid.Tests.csproj", "{5E4906B9-AA00-4C5E-B725-CC8885CE0F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED77903D-2726-4BDE-8A86-DEF9D0542B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED77903D-2726-4BDE-8A86-DEF9D0542B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED77903D-2726-4BDE-8A86-DEF9D0542B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED77903D-2726-4BDE-8A86-DEF9D0542B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4906B9-AA00-4C5E-B725-CC8885CE0F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4906B9-AA00-4C5E-B725-CC8885CE0F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4906B9-AA00-4C5E-B725-CC8885CE0F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4906B9-AA00-4C5E-B725-CC8885CE0F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Start";
+}
+
+<h2>Start</h2>
+
+@if (TempData["SmsNotificationResponse"] != null)
+{
+    <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Reply from Remote server</strong>
+        <p>
+            @TempData["SmsNotificationResponse"]
+        </p>
+    </div>
+}
+
+
+@using (Html.BeginForm("Start", null, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken();
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="shortCode">ShortCode</label>
+        <div class="col-md-10">
+            <input type="number" name="shortCode" id="shortCode" min="1000" max="999999" step="1" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="serviceId">Service ID</label>
+        <div class="col-md-10">
+            <input type="text" name="serviceId" id="serviceId" maxlength="20" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="correlator">Correlator</label>
+        <div class="col-md-10">
+            <input type="text" name="correlator" id="correlator" maxlength="10" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="criteria">Criteria</label>
+        <div class="col-md-10">
+            <input type="text" name="criteria" id="criteria" maxlength="10" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Start" class="btn btn-info" />
+        </div>
+    </div>
+}
+
+<div class="debug">
+    <h4>Request</h4>
+
+    <p>
+        @TempData["SmsNotificationRequest"]
+    </p>
+</div>
